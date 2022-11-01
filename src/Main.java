@@ -28,9 +28,9 @@ public class Main {
         int year = 1900 ;
         boolean leapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
         if (leapYear)
-            System.out.println(year + " високосный год.");
+            System.out.println(year + " это високосный год.");
             else
-            System.out.println(year + " невисокосный год.");
+            System.out.println(year + " это невисокосный год.");
     }
 
 }
