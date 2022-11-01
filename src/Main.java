@@ -20,10 +20,17 @@ public class Main {
         } else if (usersSystem == 1) {
             System.out.println("Установите облегченную версию приложения для iOS");
         }
-        if(clientDeviceYear >= 2015 && usersSystem < 1) {
+        if (clientDeviceYear >= 2015 && usersSystem < 1) {
             System.out.println("Установите приложение для Android по следующей ссылке");
         } else if (usersSystem < 1) {
             System.out.println("Установите облегченную версию приложения для Android по следующей ссылке");
         }
+        int year = 1900 ;
+        boolean leapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
+        if (leapYear)
+            System.out.println(year + " високосный год.");
+            else
+            System.out.println(year + " невисокосный год.");
     }
+
 }
