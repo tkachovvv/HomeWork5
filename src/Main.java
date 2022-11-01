@@ -25,12 +25,24 @@ public class Main {
         } else if (usersSystem < 1) {
             System.out.println("Установите облегченную версию приложения для Android по следующей ссылке");
         }
-        int year = 1900 ;
+        int year = 2004;
         boolean leapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
-        if (leapYear)
+        if (leapYear) {
             System.out.println(year + " это високосный год.");
-            else
+        } else {
             System.out.println(year + " это невисокосный год.");
-    }
 
+        }
+        int deliveryDistance = 95;
+        int deliveryTerm = 1;
+        if (deliveryDistance <= 20) {
+            System.out.println("Срок доставки составит: " + deliveryTerm + " сутки.");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Срок доставки составит: " + deliveryTerm * 2 + " суток.");
+        } else {
+            System.out.println("Срок доставки составит: " + deliveryTerm * 3 + " суток.");
+
+        }
+    }
 }
+
